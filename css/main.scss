@@ -128,7 +128,6 @@ button:hover{
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
-	padding: 0 10px;
 }
 #cont_img{
 	padding-top: 35px;
@@ -152,6 +151,22 @@ button:hover{
 .main_block h2{
 	font-size: $h2fz;
 	padding: 0;
+}
+.secondary_block{
+	display: flex;
+	flex-flow: column wrap;
+}
+.titles_part{
+	display: flex;
+	flex-flow: column wrap;
+	padding-left: 17px;
+	margin: 40px 0 55px 0;
+}
+.titles_part h1{
+	padding-top: 0;
+}
+.titles_part p{
+	text-align: left;
 }
 /****end of main content*/
 /****footer*/
@@ -184,3 +199,7 @@ footer button{
 }
 
 /****end of footer*/
+
+@media (min-width: 768px) {
+	/*Tablet and desktop styles*/
+} 
