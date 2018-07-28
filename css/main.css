@@ -194,6 +194,9 @@ h1, h2 {
   letter-spacing: 0.46px;
   padding-bottom: 20px; }
 
+h1 {
+  padding-top: 16px; }
+
 h2 {
   font-size: 20px;
   line-height: 27px;
