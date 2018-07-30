@@ -76,6 +76,7 @@ nav{
 	display: none;
 }
 .navigation a{
+	font-family: 'Open Sans', sans-serif;
 	color: $main;
 	text-decoration: none;
 	height: 40px;
@@ -95,22 +96,20 @@ nav{
 	width: 100%;
 }
 /***end of menu****/
-section{
-	background: rgba(223, 228, 238, 0.5);
+/*section{
 	width: 100%;
-}
+}*/
 #top{
+	width: 100%;
 	padding-top: 50px;
-}
-.container{
-	width: 320px;
 	margin: 0 auto;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 }
-.container img{
+#top img{
 	padding-top: 27px;
+	width: 100%;
 }
 .titles{
 	display: flex;
@@ -138,11 +137,20 @@ button:hover{
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;
+	margin-bottom: 35px;
 }
+/*.secondary_block h2{
+	padding-top: 60px;
+}*/
 #cont_img{
 	margin-top: 30px;
 	width: 232px;
 	height: 220px;
+}
+.blocks{
+	display: flex;
+	flex-flow: column wrap;
+	margin-bottom: 44px;
 }
 .main_block{
 	display: flex;
@@ -167,18 +175,15 @@ button:hover{
 	padding: 0 25px 30px 16px;
     line-height: 22px;
 }
-#secondary_content{
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	margin-bottom: 35px;
-}
-#secondary_content h2{
-	padding-top: 60px;
+#pre_sec_block{
+    margin-bottom: 45px;
 }
 .secondary_block{
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column;
+}
+.img_part img{
+	width: 100%;
 }
 .titles_part{
 	display: flex;
@@ -230,6 +235,155 @@ input:focus {
 }
 /****end of footer*/
 
-@media (min-width: 768px) {
-	/*Tablet and desktop styles*/
+
+@media screen and (min-width:768px) {
+	/*header*/
+p{
+	font-size: 20px;
+	line-height: 34px;
+}
+h1{
+	padding-top: 40px;
+}
+nav{
+	padding: 0;
+}
+.logo{
+	font-family: Open Sans, sans-serif;
+	font-size: 20px;
+	line-height: 27px;
+	padding: 11px 30px;
+}
+.icon-menu{
+	display: none;
+}
+.navigation{
+	display: flex;
+	flex-flow: row nowrap;
+}
+.navigation a{
+	color: $main;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 50px;
+    background: none;
+    box-shadow: none;
+    font-size: 16px;
+    padding-right: 90px;
 } 
+.navigation li:nth-child(3){
+	margin-right: -60px;
+}
+#top{
+	width: 95%;
+}
+.titles{
+	padding: 0 50px 55px 50px;
+}
+.titles h1{
+	font-size: 48px;
+	letter-spacing: 0.93px;
+	line-height: 64px;
+}
+.titles p{
+	font-size: 20px;
+	line-height: 34px;
+}
+#main_content{
+	width: 95%;
+    margin: 0 auto;
+}
+#main_content h1{
+	font-size: 40px;
+	line-height: 53px;
+	letter-spacing: 0.77px;
+}
+#main_content p:nth-child(2){
+	font-size: 20px;
+	line-height: 34px;
+	margin: 0 24px;
+}
+#cont_img{
+	width: 450px;
+    height: 427px;
+    margin-bottom: 20px;
+}
+.main_block{
+	margin-top: 30px;
+}
+.main_block h2{
+	padding: 23px 0 20px 0;
+}
+.main_block p{
+	font-size: 16px;
+	line-height: 22px;
+}
+#pre_sec_block{
+    width: 65%;
+    margin-bottom: 45px;
+}
+.secondary_block{
+	flex-flow: row;
+	margin: 0 20px 80px 20px;
+}
+.secondary_block:nth-child(odd){
+	flex-flow: row-reverse;
+}
+.secondary_block:last-child{
+	margin-bottom: 20px;
+}
+.titles_part p{
+	margin: 0 !important;;
+}
+.img_part{
+	min-width: 300px;
+	width: 45%;
+}
+}
+
+@media screen and (min-width:1439px) {
+.logo{
+	padding-left: 167px;
+}
+.navigation a{
+	padding-right: 95px;
+}
+.navigation li:nth-child(3){
+	margin-right: 75px;
+}
+.titles h1{
+	padding-top: 60px;
+}
+.titles p{
+	padding: 0 143px;
+}
+#main_content{
+	width: 76.6%;
+}
+.blocks{
+	flex-flow: row;
+	width: 90%;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+#top{
+	width: 76.6%;
+}
+#top img{
+	width: 85%;
+}
+#main_content p:nth-child(2){
+	margin: 0 201px;
+}
+.titles_part{
+	margin-top: 100px;
+}
+.secondary_block{
+	margin-bottom: 80px;
+}
+.titles_part{
+	width: 50%;
+}
+}
